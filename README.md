@@ -9,10 +9,11 @@ Useful for desktop wallpapers (for example a wallpaper slideshow that points at 
 ![Settings window](docs/settings.png)
 -->
 
-| About | Usage |
-|:-----|:------:|------------:|
-| .NET | 10 | Backend |
-| SQL Server | 2025 | Database |
+| Name | Description | Status |
+|------|-------------|--------|
+| API | Backend API | ✅ Done |
+| Web | Web application | 🚧 In Progress |
+| Mobile | Mobile app | ⏳ Planned |
 
 
 ## Features

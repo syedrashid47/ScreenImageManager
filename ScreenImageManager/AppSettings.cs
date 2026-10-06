@@ -29,7 +29,10 @@ namespace ScreenImageManager
 
         // ---- Weather ----
         public bool WeatherEnabled { get; set; } = true;
-        public string WeatherUrl { get; set; } = "https://mwd.runasp.net/wd01";
+        public string WeatherUrl { get; set; } = "https://XXXXXXXXX"; //put your own api url here,
+        /*the results should be structured like this
+        {"temperature":"38","feelsLike":"42","condition":"Sunny","conditionDescription":"Sunny","humidity":"12","pressure":"1012","windSpeed":"9","windDirection":"149","windFrom":"SSE","visibility":"10","uvIndex":"8","uvDescription":"Very High","airQualityIndex":"72","icon":"http://img-s-msn-com.akamaized.net/tenant/amp/entityid/AAehR3S.img","fajar":"04:32","dhuhr":"11:44","asr":"15:08","maghrib":"17:38","isha":"19:08","hijriDateString":"1448, 25 ,رَبيع الثاني","m":{"azimuth":284.43675148490405,"altitude":3.8262244257536726,"distance":374727.197170598,"illumination":19.234402256110545,"phase":127.97459098318842,"pmr":"Today 1:32 AM","nmr":"Tomorrow 2:34 AM","pms":"Yesterday 2:24 PM","nms":"Today 3:05 PM"}}
+       */
         public double Latitude { get; set; } = 24.695686543297676;
         public double Longitude { get; set; } = 46.724166870117195;
         public double Altitude { get; set; } = 612;

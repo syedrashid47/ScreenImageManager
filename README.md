@@ -116,7 +116,20 @@ The app expects an HTTP GET endpoint that accepts `latitude`, `longitude` and `a
 }
 ```
 
-Missing fields show as a dash. Units are not part of the response, so set them on the **Units** tab to match your API. A response with neither `temperature` nor `condition` is treated as a failure. The default URL is a public endpoint used by the author and may change or go away, so point the app at your own compatible service if you need guaranteed availability.
+Missing fields show as a dash. Units are not part of the response, so set them on the **Units** tab to match your API. A response with neither `temperature` nor `condition` is treated as a failure. See below for how to set your own URL and location.
+
+### Setting your own weather URL and location
+
+The weather URL, latitude, longitude and altitude have default values in `AppSettings.cs`. **Before using the app, set these to your own values.** The comments in that file explain what to change. An API that is not compatible with the JSON format above will not work, so use your own compatible service if you need guaranteed availability.
+
+There are two ways to change them:
+
+- **In the app (recommended):** open the **Weather** tab, edit the values and click **Save**. They are stored in `settings.xml` next to the exe.
+- **As new defaults for everyone who builds the project:** edit the defaults in `AppSettings.cs` and rebuild.
+
+Keep in mind that values saved in `settings.xml` always win over the defaults in the code. If you change the defaults in `AppSettings.cs` and nothing seems to happen, delete `settings.xml` (or click **Reset to defaults** and **Save**) so the new defaults are picked up.
+
+`settings.xml` contains your location, so do not commit it to a public repository. Keep it in `.gitignore`.
 
 ## Project structure
 
@@ -154,4 +167,4 @@ The code uses C# 7.3 (the .NET Framework default) and needs a reference to `Syst
 
 ## License
 
-Free free free
+Free

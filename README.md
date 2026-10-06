@@ -1,19 +1,7 @@
 # Screen Image Manager
 
-<!-- Add a screenshot of the generated image and of the settings window here:
-![Generated image](docs/image.png)
-![Settings window](docs/settings.png)
--->
-<table style="border: none;">
-  <tr style="border: none;">
-    <td style="border: none;">First item</td>
-    <td style="border: none;">Second item</td>
-  </tr>
-  <tr style="border: none;">
-    <td style="border: none;">Third item</td>
-    <td style="border: none;">Fourth item</td>
-  </tr>
-</table>
+
+
 | About |  |
 |------|--------------------|
 | A small Windows desktop app (.NET Framework 4.8.1, WinForms) that creates a PNG image exactly the size of your primary screen, with your own text, a timestamp and a live weather panel on the right side. A settings window lets you configure everything, and a built-in scheduler button sets up a hidden Windows scheduled task that regenerates the image every few minutes. <br><br>Useful for desktop wallpapers (for example a wallpaper slideshow that points at the output folder), info screens, or any place that needs an always-fresh, screen-sized image. |![Screenshot](screenshot_Usage.png)  |

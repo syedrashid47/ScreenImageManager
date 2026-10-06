@@ -9,6 +9,12 @@ Useful for desktop wallpapers (for example a wallpaper slideshow that points at 
 ![Settings window](docs/settings.png)
 -->
 
+| About | Usage |
+|:-----|:------:|------------:|
+| .NET | 10 | Backend |
+| SQL Server | 2025 | Database |
+
+
 ## Features
 
 - **Exact screen size.** The image matches the real pixel resolution of the primary monitor, even when Windows display scaling (125%, 150%, ...) is on.
